@@ -31,6 +31,7 @@ ENV CHECKPOINT_DISABLE=1
 RUN --mount=type=bind,source=requirements.txt,target=requirements.txt \
     python3 -m venv /opt/venv \
     && . /opt/venv/bin/activate \
+    && python3 -m pip install --no-cache-dir --upgrade pip \
     && python3 -m pip install --no-cache-dir --requirement requirements.txt \
     && python3 -m pip cache purge
 ENV PATH="/opt/venv/bin:${PATH}"
