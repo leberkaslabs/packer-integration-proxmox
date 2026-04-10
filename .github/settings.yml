@@ -1,0 +1,5 @@
+---
+# https://github.com/apps/settings
+repository:
+  description: HashiCorp Packer Docker image with built-in Proxmox and Ansible integrations.
+  topics: packer, tools, container, docker
